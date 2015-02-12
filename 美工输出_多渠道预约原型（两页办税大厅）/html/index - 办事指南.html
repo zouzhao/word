@@ -1,0 +1,244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>办税预约</title>
+<SCRIPT language=JavaScript src="../js/titletab.js"></SCRIPT>
+<link href="../css/css.css" rel="stylesheet" type="text/css" />
+</head>
+ <script>
+function $(element){
+return element = document.getElementById(element);
+}
+function $D(){
+var d=$('class1content');
+var h=d.offsetHeight;
+var maxh=60;
+function dmove(){
+h+=50; //设置层展开的速度
+if(h>=maxh){
+d.style.height='50px';
+clearInterval(iIntervalId);
+}else{
+d.style.display='block';
+d.style.height=h+'px';
+}
+}
+iIntervalId=setInterval(dmove,2);
+}//欢迎来到站长特效网，我们的网址是www.zzjs.net，很好记，zz站长，js就是js特效，本站收集大量高质量js代码，还有许多广告代码下载。
+function $D2(){
+var d=$('class1content');
+var h=d.offsetHeight;
+var maxh=50;
+function dmove(){
+h-=50;//设置层收缩的速度zzjs.net
+if(h<=0){
+d.style.display='none';
+clearInterval(iIntervalId);
+}else{
+d.style.height=h+'px';
+}
+}
+iIntervalId=setInterval(dmove,2);
+}
+function $use(){
+var d=$('class1content');
+var sb=$('www_zzjs_net');
+if(d.style.display=='none'){
+$D();
+sb.innerHTML='预约规则&nbsp;▼';
+}else{
+$D2();
+sb.innerHTML='预约规则&nbsp;▲';
+}
+}//欢迎来到站长特效网，我们的网址是www.zzjs.net，很好记，zz站长，js就是js特效，本站收集大量高质量js代码，还有许多广告代码下载。
+</script>
+<body>
+<div class="title"><img src="../images/title_pic2.png"  /></div>
+<div class="grzx">
+欢迎您：管理员<span><a href="#">个人中心</a></span><span><a href="#">退出登录</a></span>
+</div>
+<div class="main">
+     <div class="text">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><span id="www_zzjs_net" onclick="$use()">预约规则&nbsp;▼</span></td>
+    <td align="right" style="width:200px;" class="but01"><a href="#" >我的预约</a></td>
+  </tr>
+</table>
+          <ul  id="class1content">
+            <p>1、同一个办税事项，一个用户一天只能预约一次；</p>
+            <p>2、预约成功后，请在预约的时间内到预约的办税厅取号办理，提前或过期均无效；如需取消预约，请在预约的时间前取消，否则视同违约；</p>
+            <p>3、用户如果半年内出现三次预约后没到办税厅办理业务，系统将会把该微信号列入黑名单，黑名单用户三个月内不能进行预约。</p>
+          </ul>
+     </div>
+     
+     <div class="bz01">
+          <div class="xzbsdt"><span>1. </span>请选择办税大厅 <img src="../images/dot01.png" /></div>
+          <div class="box01">
+               <h1>税务机关：直属税务分局</h1>
+               <div class="box-dz"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><img src="../images/icon01.png"   align="absmiddle" /> 地址：中山市兴中道55号
+</td>
+    <td><img src="../images/icon02.png"  align="absmiddle" /> 电话：88326094</td>
+    <td><img src="../images/icon03.png"  align="absmiddle" /> 办税地图</td>
+  </tr>
+</table>
+</div>
+          </div>
+     </div>
+     
+     <div class="bz01">
+          <div class="xzbsdt"><span>2. </span>请选择办税大厅 </div>
+          <div class="box01" style="overflow:hidden; height:100%;">
+                <div class="list2" onclick="change_bg(1)"><ul><span>代开发票</span><li>等待人数<strong>10</strong>人，正在办理人数<strong>2</strong>人</li></ul></div>
+                <div class="list" onclick="change_bg(2)"><ul><span>代开发票</span><li>等待人数<strong>10</strong>人，正在办理人数<strong>2</strong>人</li></ul></div>
+                <div class="list" onclick="change_bg(3)"><ul><span>代开发票</span><li>等待人数<strong>10</strong>人，正在办理人数<strong>2</strong>人</li></ul></div>
+                
+                <div class="list" onclick="change_bg(4)"><ul><span>代开发票</span><li>等待人数<strong>10</strong>人，正在办理人数<strong>2</strong>人</li></ul></div>
+                <div class="list" onclick="change_bg(5)"><ul><span>代开发票</span><li>等待人数<strong>10</strong>人，正在办理人数<strong>2</strong>人</li></ul></div>
+                <div class="list" onclick="change_bg(6)"><ul><span>代开发票</span><li>等待人数<strong>10</strong>人，正在办理人数<strong>2</strong>人</li></ul></div>
+          </div>
+     </div>
+     
+     
+     <div class="bz01" style="position:relative;">
+          <div class="xzbsdt"><span>3. </span>请选择预约办税时间 </div>
+         <div class="time">
+    
+          <div class="time_se">
+            <ul>
+              <li id="two1" onClick="setTab('two',1,3)" class="hover"><span>9月15号</span></li>
+              <li id="two2" onClick="setTab('two',2,3)" >9月17号 </li>
+              <li id="two3" onClick="setTab('two',3,3)" >9月16号 </li>
+            </ul>
+          </div>
+         <div class="time_nav"> 
+            <div id="con_two_1">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table01">
+  <tr class="tr01">
+    <th width="110" class="td01">上 午</th>
+    <td class="td02"><table border="0" class="time_t" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="10"></td>
+        <td width="33" valign="middle"><input name="" type="radio" value="" style="width:15px; height:15px;"></td>
+        <td><p class="time_s">09:00-10:00</p>
+          <p class="time_m">剩余<span>135</span>个名额</p></td>
+      </tr>
+    </table></td>
+    <td class="td02"><table border="0" class="time_t" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="10"></td>
+        <td width="33" valign="middle"><input name="" type="radio" value="" style="width:15px; height:15px;" /></td>
+        <td><p class="time_s">10:00-11:00</p>
+          <p class="time_m">剩余<span>135</span>个名额</p></td>
+      </tr>
+    </table></td>
+    <td class="td02"><table border="0" class="time_t" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="10"></td>
+        <td width="33" valign="middle"><input name="" type="radio" value="" style="width:15px; height:15px;" /></td>
+        <td><p class="time_s">11:00-12:00</p>
+          <p class="time_m">剩余<span>135</span>个名额</p></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <th class="td01">下 午</th>
+    <td class="td02"><table border="0" class="time_t" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="10"></td>
+        <td width="33" valign="middle"><input name="" type="radio" value="" style="width:15px; height:15px;" /></td>
+        <td><p class="time_s">14:00-15:00</p>
+          <p class="time_m">剩余<span>135</span>个名额</p></td>
+      </tr>
+    </table></td>
+    <td class="td02"><table border="0" class="time_t" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="10"></td>
+        <td width="33" valign="middle"><input name="" type="radio" value="" style="width:15px; height:15px;" /></td>
+        <td><p class="time_s">15:00-16:00</p>
+          <p class="time_m">剩余<span>135</span>个名额</p></td>
+      </tr>
+    </table></td>
+    <td class="td02"><table border="0" class="time_t" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="10"></td>
+        <td width="33" valign="middle"><input name="" type="radio" value="" style="width:15px; height:15px;" /></td>
+        <td><p class="time_s">16:00-17:00</p>
+          <p class="time_m">剩余<span>135</span>个名额</p></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+
+
+            </div>
+            <div id="con_two_2" style="display:none">2</div>
+            <div id="con_two_3" style="display:none">3</div>
+           </div>
+           
+        </div>
+<div class="win01" id="Layer1" style="position:absolute;display:none; background-image:url(../n_images/bgbg.png); box-shadow: 5px 5px 5px 0px lightgray;">
+     <div class="windiv"> <table width="100%" border="0" cellspacing="0" cellpadding="0" class="win-table">
+  <tr>
+    <td width="53"><img src="../images/dot04.gif" /></td>
+    <td>预约信息确认</td>
+    <td align="right"><img src="../images/dot05.gif" /></td>
+  </tr>
+</table>
+  <div class="win-center">
+       预约大厅：[直属税务分局]<br />
+预约时间：2015-01-21 08:00-09:00<br />
+预约业务：发票发售<br />
+   </div>
+   <table width="100%" border="0" cellspacing="0" cellpadding="0">
+     <tr>
+       <td><div class="yyqr01"><a href="#">确认 </a></div></td>
+       <td width="10"></td>
+       <td><div class="yyqr02"><a href="#">取消</a></div></td>
+     </tr>
+   </table></div>
+
+</div>
+</div>
+
+<div class="bz01">
+          <div class="xzbsdt"><span>4. </span>请填写预约人信息</div>
+          <div class="box01"  >
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" class="input01">
+              <tr>
+                <td width="80">联系人</td>
+                <td width="244"><input type="text" name="textfield" id="textfield" /></td>
+                <td width="72">   手机号码     </td>
+                <td width="381"><input type="text" name="textfield2" id="textfield2" /></td>
+              </tr>
+            </table>
+          </div>
+  </div>
+  
+  <div class="xy"><table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><input name="" type="checkbox" value="" />
+      我已阅读中山市地方税务局xxx协议 </td>
+    <td width="300" align="center"><img src="../images/btn03.png" width="125" height="35" /></td>
+  </tr>
+</table>
+</div>
+  
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><div class="but01"><a href="#" onclick="Layer1.style.display='block'" style=" width:210px;">确认预约</a></div></td>
+    <td width="10"></td>
+    <td><div class="but02"><a href="#" style=" width:210px;">取消预约</a></div></td>
+  </tr>
+
+</table>
+     </div>
+     
+     
+</div>
+
+</body>
+</html>

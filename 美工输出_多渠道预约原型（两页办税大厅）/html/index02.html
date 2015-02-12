@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>办税预约</title>
+<SCRIPT language=JavaScript src="../js/titletab.js"></SCRIPT>
+<link href="../css/css.css" rel="stylesheet" type="text/css" />
+</head>
+ <script>
+function $(element){
+return element = document.getElementById(element);
+}
+function $D(){
+var d=$('class1content');
+var h=d.offsetHeight;
+var maxh=60;
+function dmove(){
+h+=50; //设置层展开的速度
+if(h>=maxh){
+d.style.height='50px';
+clearInterval(iIntervalId);
+}else{
+d.style.display='block';
+d.style.height=h+'px';
+}
+}
+iIntervalId=setInterval(dmove,2);
+}//欢迎来到站长特效网，我们的网址是www.zzjs.net，很好记，zz站长，js就是js特效，本站收集大量高质量js代码，还有许多广告代码下载。
+function $D2(){
+var d=$('class1content');
+var h=d.offsetHeight;
+var maxh=50;
+function dmove(){
+h-=50;//设置层收缩的速度zzjs.net
+if(h<=0){
+d.style.display='none';
+clearInterval(iIntervalId);
+}else{
+d.style.height=h+'px';
+}
+}
+iIntervalId=setInterval(dmove,2);
+}
+function $use(){
+var d=$('class1content');
+var sb=$('www_zzjs_net');
+if(d.style.display=='none'){
+$D();
+sb.innerHTML='预约规则&nbsp;▼';
+}else{
+$D2();
+sb.innerHTML='预约规则&nbsp;▲';
+}
+}//欢迎来到站长特效网，我们的网址是www.zzjs.net，很好记，zz站长，js就是js特效，本站收集大量高质量js代码，还有许多广告代码下载。
+</script>
+<body>
+<div class="grzx">
+欢迎您：管理员<span><a href="#">个人中心</a></span><span><a href="#">退出登录</a></span>
+</div>
+<div class="title"><img src="../images/title_pic2.png"  /></div>
+
+<div class="main">
+     <div class="text">
+          <span id="www_zzjs_net" onclick="$use()">预约成功 </span>
+          <ul  id="class1content" style="text-indent:2em;">您已经预约成功！请在预约的时间内到预约的办税厅取号办理，提前或过期均无效；如需取消预约，请在预约的时间前取消，否则视同违约。</ul>
+     </div>
+     
+     <div class="table-div">
+       <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        
+       <tr>
+         <th width="120">预约号：</th>
+         <td>01929283 </td>
+         <th width="120">状态：</th>
+         <td>预约成功</td>
+       </tr>
+       <tr>
+         <th>预约办税厅：</th>
+         <td>直属税务分局</td>
+         <th>办税事项：</th>
+         <td>发票发售</td>
+       </tr>
+       <tr>
+         <th>预约日期：</th>
+         <td>2015-01-21</td>
+         <th>预约时间段：</th>
+         <td>08:00-09:00</td>
+       </tr>
+       <tr>
+         <th>联系人：</th>
+         <td>张 三 </td>
+         <th>联系方式：</th>
+         <td>13567894455</td>
+       </tr>
+       </table>
+     </div>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+    <td><div class="but01"><a href="#" onclick="Layer1.style.display='block'" style=" width:210px;" >确 定</a></div></td>
+    </tr>
+
+</table>
+     </div>
+     
+     
+</div>
+
+</body>
+</html>

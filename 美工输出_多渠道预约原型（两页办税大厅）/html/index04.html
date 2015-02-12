@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>办税预约</title>
+<SCRIPT language=JavaScript src="../js/titletab.js"></SCRIPT>
+<link href="../css/css.css" rel="stylesheet" type="text/css" />
+</head>
+ <script>
+function $(element){
+return element = document.getElementById(element);
+}
+function $D(){
+var d=$('class1content');
+var h=d.offsetHeight;
+var maxh=60;
+function dmove(){
+h+=50; //设置层展开的速度
+if(h>=maxh){
+d.style.height='50px';
+clearInterval(iIntervalId);
+}else{
+d.style.display='block';
+d.style.height=h+'px';
+}
+}
+iIntervalId=setInterval(dmove,2);
+}//欢迎来到站长特效网，我们的网址是www.zzjs.net，很好记，zz站长，js就是js特效，本站收集大量高质量js代码，还有许多广告代码下载。
+function $D2(){
+var d=$('class1content');
+var h=d.offsetHeight;
+var maxh=50;
+function dmove(){
+h-=50;//设置层收缩的速度zzjs.net
+if(h<=0){
+d.style.display='none';
+clearInterval(iIntervalId);
+}else{
+d.style.height=h+'px';
+}
+}
+iIntervalId=setInterval(dmove,2);
+}
+function $use(){
+var d=$('class1content');
+var sb=$('www_zzjs_net');
+if(d.style.display=='none'){
+$D();
+sb.innerHTML='预约规则&nbsp;▼';
+}else{
+$D2();
+sb.innerHTML='预约规则&nbsp;▲';
+}
+}//欢迎来到站长特效网，我们的网址是www.zzjs.net，很好记，zz站长，js就是js特效，本站收集大量高质量js代码，还有许多广告代码下载。
+</script>
+<body>
+<div class="fd-div">
+<div class="win01" id="Layer1" style="position:absolute; display:none; background-image:url(../n_images/bgbg.png);     box-shadow: 5px 5px 5px 0px lightgray;">
+     <div class="windiv"> <table width="100%" border="0" cellspacing="0" cellpadding="0" class="win-table">
+  <tr>
+    <td width="53"><img src="../images/dot04.gif" /></td>
+    <td>预约取消确认</td>
+    <td align="right"><img src="../images/dot05.gif" /></td>
+  </tr>
+</table>
+  <div class="win-center">
+       预约大厅：[直属税务分局]<br />
+预约时间：2015-01-21 08:00-09:00<br />
+预约业务：发票发售<br />
+   </div>
+   <table width="100%" border="0" cellspacing="0" cellpadding="0">
+     <tr>
+       <td><div class="but01"><a href="#" style=" width:110px;">确认 </a></div></td>
+       <td width="10"></td>
+       <td><div class="but02"><a href="#" style=" width:110px;">取消</a></div></td>
+     </tr>
+   </table></div>
+</div>
+
+</div>
+<div class="title"><img src="../images/title_pic.png"  /></div>
+<div class="grzx">
+欢迎您：管理员<span><a href="#">个人中心</a></span><span><a href="#">退出登录</a></span>
+</div>
+<div class="main">
+     <div class="text">
+     <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="26%"><span id="www_zzjs_net" onclick="$use()">预约规则&nbsp;▼</span></td>
+    <td width="74%"><div class="cyfjsz"><a href="#">常用分局设置</a></div><div class="wdyy"><a href="#" >进入预约</a></div></td><td width="0%"></td>
+  </tr>
+</table>
+
+       <ul  id="class1content"><p>1、同一个办税事项，一个用户一天只能预约一次；</p>
+            <p>2、预约成功后，请在预约的时间内到预约的办税厅取号办理，提前或过期均无效；如需取消预约，请在预约的时间前取消，否则视同违约；</p>
+            <p>3、用户如果半年内出现三次预约后没到办税厅办理业务，系统将会把该微信号列入黑名单，黑名单用户三个月内不能进行预约。</p></ul>
+     </div>
+ 
+     <table width="100%" border="0" cellspacing="0" cellpadding="0">
+       <tr>
+         <td height="25">&nbsp;</td>
+       </tr>
+     </table>
+     <table width="100%" border="0" cellspacing="5" cellpadding="0">
+  <tr>
+    <td width="110">预约办税厅：   </td>
+    <td><select name="select" id="select">
+      <option>---------------------</option>
+    </select></td>
+    <td width="100">预约日期：</td>
+    <td><table border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td><input name="textfield2" type="text" class="input02" id="textfield2" /></td>
+        <td><img src="../images/date.png" width="29" height="26" /></td>
+      </tr>
+    </table></td>
+    <td width="60"> 状态：</td>
+    <td><select name="select2" id="select2">
+      <option>---------------------</option>
+    </select></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="TableList">
+  <tr>
+    <th>序号</th>
+    <th>预约号</th>
+    <th>预约办税厅</th>
+    <th>办税事项</th>
+    <th>预约日期</th>
+    <th>预约时间段</th>
+    <th>大厅取票时间</th>
+    <th>状态</th>
+    <th>联系人</th>
+    <th>手机号码</th>
+    <th>操作</th>
+  </tr>
+  <tr>
+    <td align="center">1</td>
+    <td>0000001900</td>
+    <td>直属税务分局</td>
+    <td>发票发售</td>
+    <td>2015-01-21</td>
+    <td>08:00-09:00</td>
+    <td>&nbsp;</td>
+    <td align="center">预约成功</td>
+    <td align="center"> 张三   </td>
+    <td align="center">13530928333</td>
+    <td align="center" onclick="Layer1.style.display='block'" ><font color="blue">取消</font></td>
+  </tr>
+  <tr>
+    <td align="center">2</td>
+    <td>0000001890</td>
+    <td>直属税务分局</td>
+    <td>综合服务</td>
+    <td>2015-01-15</td>
+    <td>11:00-12:00</td>
+	<td >&nbsp;</td>
+    <td align="center">已取消</td>
+    <td align="center">张三   </td>
+    <td align="center">13530928333</td>
+    <td align="center">取消</td>
+  </tr>
+  <tr>
+    <td align="center">3</td>
+    <td>0000001790</td>
+    <td>直属税务分局</td>
+    <td>代开发票</td>
+    <td>2015-01-6</td>
+    <td>9:00-10:00</td>
+    <td>2015-01-6 8:50</td>
+    <td align="center">已办理</td>
+    <td align="center">张三   </td>
+    <td align="center">13530928333</td>
+    <td align="center">取消</td>
+  </tr>
+  <tr>
+    <td align="center">4</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td align="center">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="center">5</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td align="center">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+  </tr>
+</table>
+     <table width="100%" border="0" cellspacing="0" cellpadding="0">
+       <tr>
+         <td height="10">&nbsp;</td>
+       </tr>
+     </table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+       <tr>
+         <td height="25" align="center">
+         <div style="width:570px;margin:0 auto;">
+           <div class="fybtn01"><a href="">首页</a></div>
+           <a href="" class="fybtn02"><<</a>
+           <div class="fybtn03"><a href="">1</a></div>
+           <div class="fybtn03"><a href="">2</a></div>
+           <div class="fybtn03"><a href="">3</a></div>
+           <div class="fybtn03"><a href="">4</a></div>
+           <div class="fybtn03"><a href="">5</a></div>
+           <div class="fybtn03"><a href="">6</a></div>
+           <div class="fybtn03"><a href="">7</a></div>
+         <div class="fybtn03"><a href="">8</a></div>
+         <a href="" class="fybtn02">>></a><div class="fybtn01"><a href="">尾页</a></div>
+         <input type="text" name="textfield" id="textfield" class="input03"/>         <div class="fybtn01"><a href="">跳转</a></div></div></td>
+    </tr>
+ </table>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+       <tr>
+         <td height="20">&nbsp;</td>
+       </tr>
+     </table>
+   </div>
+
+</body>
+</html>

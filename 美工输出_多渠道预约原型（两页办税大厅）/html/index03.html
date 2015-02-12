@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>办税预约</title>
+<SCRIPT language=JavaScript src="../js/titletab.js"></SCRIPT>
+<link href="../css/css.css" rel="stylesheet" type="text/css" />
+</head>
+ <script>
+function $(element){
+return element = document.getElementById(element);
+}
+function $D(){
+var d=$('class1content');
+var h=d.offsetHeight;
+var maxh=60;
+function dmove(){
+h+=50; //设置层展开的速度
+if(h>=maxh){
+d.style.height='50px';
+clearInterval(iIntervalId);
+}else{
+d.style.display='block';
+d.style.height=h+'px';
+}
+}
+iIntervalId=setInterval(dmove,2);
+}//欢迎来到站长特效网，我们的网址是www.zzjs.net，很好记，zz站长，js就是js特效，本站收集大量高质量js代码，还有许多广告代码下载。
+function $D2(){
+var d=$('class1content');
+var h=d.offsetHeight;
+var maxh=50;
+function dmove(){
+h-=50;//设置层收缩的速度zzjs.net
+if(h<=0){
+d.style.display='none';
+clearInterval(iIntervalId);
+}else{
+d.style.height=h+'px';
+}
+}
+iIntervalId=setInterval(dmove,2);
+}
+function $use(){
+var d=$('class1content');
+var sb=$('www_zzjs_net');
+if(d.style.display=='none'){
+$D();
+sb.innerHTML='预约规则&nbsp;▼';
+}else{
+$D2();
+sb.innerHTML='预约规则&nbsp;▲';
+}
+}//欢迎来到站长特效网，我们的网址是www.zzjs.net，很好记，zz站长，js就是js特效，本站收集大量高质量js代码，还有许多广告代码下载。
+</script>
+<body>
+
+<div class="title"><img src="../title_pic2.png"  /></div>
+<div class="grzx">
+欢迎您：管理员<span><a href="#">个人中心</a></span><span><a href="#">退出登录</a></span>
+</div>
+<div class="main">
+     <div class="title01">
+               <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>税务分局列表</td>
+    <td align="right"><img src="../images/ss.png" onclick="Layer2.style.display='block'"  width="42" height="38" /></td>
+    </tr>
+</table>
+ </div>
+     <div class="bz01">
+     <table width="100%" border="0">
+  <tr>
+    <td><div class="xzbsdt2"><span>1. </span>请选择办税大厅</div></td>
+    <td><div class="cyfjsz"><a href="#">常用分局设置</a></div></td>
+  </tr>
+</table>
+  </div>
+  <div class="bz01">
+    <div class="list3">
+         <ul>
+                   <li><a href="#">中山市三乡税务分局</a></li>
+                   <li class="list-dq"><a href="#">直属税务分局</a></li>
+                   <li><a href="#">中山市小榄税务分局</a></li>
+                   <li><a href="#">中山市开发区税务分局</a></li>
+                <!--   <li><a href="#">惠州市惠城区xxxx区局办税厅</a></li>
+                   <li><a href="#">惠州市惠城区xxxx区局办税厅</a></li> -->
+      </ul>
+    </div>
+  </div>
+  
+  
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><div class="but01"><a href="#">确 定</a></div></td>
+    <td width="10"></td>
+    <td><div class="but02"><a href="#">取 消</a></div></td>
+  </tr>
+
+</table>
+     </div>
+     
+     
+</div>
+
+</body>
+</html>
